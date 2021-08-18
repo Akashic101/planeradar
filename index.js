@@ -41,7 +41,7 @@ cron.schedule('* * * * *', () => { //(minute, hour, day of month, month, day of 
 							});
 
 							try {
-								var data = JSON.stringify(flightsList); //Convert it from an object to a string with JSON.stringify
+								var data = JSON.stringify(flightsList, null, "\t"); //Convert it from an object to a string with JSON.stringify
 
 								fs.writeFileSync('./planeflight.json', data, 'utf8'); //Use fs to write the file to disk (filename, data, fileformat)
 							} catch (err) {
