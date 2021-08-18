@@ -1,0 +1,15 @@
+{
+  "name": "planeradar",
+  "version": "1.0.0",
+  "description": "An app which notifies you whenever there is a plane above a set coordinates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David \"Akashic\" Moll",
+  "license": "ISC",
+  "dependencies": {
+    "flightradar24-client": "^0.3.0",
+    "node-cron": "^3.0.0"
+  }
+}
